@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "homepage": "http://github.com/contra/windows_98.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/contra/windows_98.css"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.3.0",
+    "gulp": "^3.8.7",
+    "gulp-csso": "^0.2.9",
+    "gulp-gh-pages": "^0.3.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-stylus": "^1.3.0",
+    "nib": "^1.0.3"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/contra/windows_98.css/raw/master/LICENSE"
+    }
+  ]
+}
