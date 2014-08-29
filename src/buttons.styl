@@ -7,25 +7,25 @@ button
   text-align: center
   outline: none
   padding: 4px
-  background: #bfbfbf
+  background: gray
   border: 1px solid
-  border-top-color: #dfdfdf
-  border-left-color: #dfdfdf
-  border-right-color: #808080
-  border-bottom-color: #808080
-  box-shadow: 1px 1px 0 0 #000
+  border-top-color: gray-lighter
+  border-left-color: gray-lighter
+  border-right-color: gray-dark
+  border-bottom-color: gray-dark
+  box-shadow: 1px 1px 0 0 black
 
   &:enabled
-    color: #070707
+    color: gray-darker;
 
   &:disabled
     color: #818181
-    text-shadow: 1px 1px #fff
+    text-shadow: 1px 1px white
 
   &:active:enabled
     // TODO: needs more accurate styles
-    box-shadow: 0 0 0 0 #000 inset
-    border-top-color: #000
-    border-left-color: #000
-    border-right-color: #000
-    border-bottom-color: #000
+    box-shadow: 0 0 0 0 black inset
+    border-top-color: black
+    border-left-color: black
+    border-right-color: black
+    border-bottom-color: black
