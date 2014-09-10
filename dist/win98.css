@@ -17,6 +17,7 @@
   border-bottom-color: #808080;
   box-shadow: 1px 1px 0 0 #000;
   width: 400px;
+  cursor: default;
 }
 .win98 .window .content {
   padding: 7px 10px;
@@ -62,6 +63,7 @@
   font-size: 13px;
   padding: 1px;
   position: relative;
+  cursor: default;
 }
 .win98 .menu:before,
 .win98 .menu:after {
@@ -109,7 +111,6 @@
   border-bottom: 1px solid #dfdfdf;
 }
 .win98 .menu .menu-content .item {
-  cursor: pointer;
   padding: 10px;
 }
 .win98 .menu .menu-content .item:hover {
@@ -170,6 +171,7 @@
   text-align: center;
   outline: none;
   padding: 4px;
+  cursor: default;
 }
 .win98 button:enabled {
   color: #070707;
