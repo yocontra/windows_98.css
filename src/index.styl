@@ -1,11 +1,13 @@
 @import 'nib'
 @import './variables'
 @import './mixins'
+@import './utilities'
 
 .win98
   shittyfont()
 
   @require './window'
+  @require './menu'
   @require './buttons'
 
   .resizable

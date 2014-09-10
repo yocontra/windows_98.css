@@ -1,3 +1,6 @@
+.block-centered {
+  margin: 0 auto;
+}
 .win98 {
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: none;
@@ -6,7 +9,6 @@
   color: #070707;
 }
 .win98 .window {
-  width: 400px;
   background: #bfbfbf;
   border: 1px solid;
   border-top-color: #dfdfdf;
@@ -14,6 +16,7 @@
   border-right-color: #808080;
   border-bottom-color: #808080;
   box-shadow: 1px 1px 0 0 #000;
+  width: 400px;
 }
 .win98 .window .content {
   padding: 7px 10px;
@@ -46,15 +49,7 @@
   height: 14px;
   width: 14px;
 }
-.win98 button {
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: none;
-  font-size: 11px;
-  font-family: Tahoma, Verdana;
-  color: #070707;
-  text-align: center;
-  outline: none;
-  padding: 4px;
+.win98 .menu {
   background: #bfbfbf;
   border: 1px solid;
   border-top-color: #dfdfdf;
@@ -62,6 +57,119 @@
   border-right-color: #808080;
   border-bottom-color: #808080;
   box-shadow: 1px 1px 0 0 #000;
+  zoom: 1;
+  width: 195px;
+  font-size: 13px;
+  padding: 1px;
+  position: relative;
+}
+.win98 .menu:before,
+.win98 .menu:after {
+  content: "";
+  display: table;
+}
+.win98 .menu:after {
+  clear: both;
+}
+.win98 .menu >.menu-content {
+  float: right;
+}
+.win98 .menu .menu-sidebar {
+  background: -webkit-linear-gradient(top, #000080, #1084d0);
+  background: linear-gradient(to bottom, #000080, #1084d0);
+  position: absolute;
+  width: 25px;
+  height: 100%;
+}
+.win98 .menu .menu-sidebar .headline {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: absolute;
+  bottom: 40px;
+  left: -32px;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+}
+.win98 .menu .menu-content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: #000;
+  list-style: none;
+  margin: 2px 0;
+  width: 170px;
+}
+.win98 .menu .menu-content .divider {
+  margin: 7px 6px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #dfdfdf;
+}
+.win98 .menu .menu-content .item {
+  cursor: pointer;
+  padding: 10px;
+}
+.win98 .menu .menu-content .item:hover {
+  color: #fff;
+  background: #000080;
+}
+.win98 .menu .menu-content .item.folder {
+  position: relative;
+}
+.win98 .menu .menu-content .item.folder:after {
+  content: '\25B6';
+  float: right;
+  font-size: 10px;
+}
+.win98 .menu .menu-content .item .icon {
+  float: left;
+  margin-right: 7px;
+  margin-top: -4px;
+}
+.win98 .menu .menu-content .item:hover .menu-content,
+.win98 .menu .menu-content .item:focus .menu-content {
+  display: block;
+}
+.win98 .menu .menu-content .menu-content {
+  background: #bfbfbf;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+  display: none;
+  position: absolute;
+  left: 165px;
+  top: -4px;
+}
+.win98 .menu .menu-content .menu-content .item {
+  padding: 3px 10px;
+}
+.win98 .menu .menu-content .menu-content .icon {
+  width: 18px;
+  height: 18px;
+  margin-top: -2px;
+}
+.win98 button {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-size: 11px;
+  font-family: Tahoma, Verdana;
+  color: #070707;
+  background: #bfbfbf;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+  text-align: center;
+  outline: none;
+  padding: 4px;
 }
 .win98 button:enabled {
   color: #070707;

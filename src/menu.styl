@@ -1,0 +1,84 @@
+@import 'nib'
+@import './mixins'
+
+.menu
+  backdrop()
+  clearfix()
+
+  width: 195px
+  font-size: 13px
+  padding 1px
+  position relative
+
+  >.menu-content
+    float: right
+
+  .menu-sidebar
+    // TODO: needs more accurate colouring
+    background: linear-gradient(to bottom, blue-dark, blue-light)
+    position absolute
+    width: 25px
+    height: 100%
+
+    .headline
+      transform: rotate(270deg);
+      position: absolute;
+      bottom: 40px;
+      left: -32px;
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+      color: white;
+
+  .menu-content
+    reset-box-model()
+
+    color: black
+    list-style: none
+    margin: 2px 0
+    width: 170px
+
+    .divider
+      margin: 7px 6px
+      border-top: 1px solid gray-dark
+      border-bottom: 1px solid gray-lighter
+
+    .item
+      cursor: pointer
+      padding 10px
+
+    .item:hover
+      color: white
+      background: blue-dark
+
+    .item.folder
+      position relative
+
+    .item.folder:after
+      content: '\25B6'
+      float: right
+      font-size 10px
+
+    .item .icon
+      float: left;
+      margin-right: 7px;
+      margin-top: -4px;
+
+    .item:hover .menu-content,
+    .item:focus .menu-content
+      display: block
+
+    .menu-content
+      backdrop()
+      display: none
+      position absolute
+      left: 165px
+      top: -4px
+
+      .item
+        padding: 3px 10px
+
+      .icon
+        width: 18px;
+        height: 18px;
+        margin-top -2px
