@@ -1,5 +1,5 @@
 {
-  "name": "windows-98-css",
+  "name": "windows_98.css",
   "version": "0.0.1",
   "description": "A CSS library for creating Windows 98 style UI elements",
   "homepage": "http://github.com/contra/windows_98.css",
@@ -10,6 +10,10 @@
   "author": {
     "name": "Eric Schoffstall"
   },
+  "main": "dist/win98.css",
+  "files": [
+    "dist/win98.css"
+  ],
   "keywords": ["Windows 98", "Windows", "CSS"],
   "devDependencies": {
     "autoprefixer-stylus": "^0.3.0",
