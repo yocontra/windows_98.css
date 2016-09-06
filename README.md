@@ -1,6 +1,6 @@
 ## windows_98.css
 
-This is a work in progress. The goal is to get as close as possible to the look and feel of windows 98.
+`npm install windows_98.css`
 
 [Quick Demo Page](http://contra.io/windows_98.css)
 
